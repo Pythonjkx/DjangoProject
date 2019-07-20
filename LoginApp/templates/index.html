@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block content %}
+    <span style="font-size: 100px;color: antiquewhite;margin-left: 500px">首页</span>
+    <br>
+
+    <marquee style="font-size:80px;color:aquamarine;">哈喽！   {{ request.COOKIES.username }}欢迎您到访寒舍！</marquee>
+
+
+    <br>
+    <br>
+    <span style="font-size: 150px;color: white;margin-left: 250px;margin-top: 500px;">首页 | 哈哈</span>
+    <br>
+    <br>
+    <br>
+    <a href="/out/" style="color: greenyellow;font-size: 60px;margin-left: 500px;font-family: 楷体">退            出</a>
+{% endblock %}

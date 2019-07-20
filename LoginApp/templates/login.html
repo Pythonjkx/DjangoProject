@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}
+    <link rel="stylesheet" href="/static/css/register.css">
+{% endblock %}
+
+{% block content %}
+<form action="" method="post">
+
+
+   {% csrf_token %}
+        <p class="a">
+            <span style="font-size: 100px;color: antiquewhite;text-align: center">登录页</span>
+            <br>
+        <lable class="w">账户:</lable>
+        <input type="text" name="username" class="b" id="id_username" style="font-size: 30px">
+
+            <br>
+        <lable class="w">密码:</lable>
+        <input type="password" name="password" class="b" style="font-size: 30px">
+            <br>
+            <input id="submit" type="submit" value="登录" style="font-size: 30px;width: 100px">
+
+
+            <br>
+            <a href="/re/" style="color: aliceblue;font-size: 30px;font-family: 仿宋;text-align: center">没有账户？点击注册</a>
+            <br>
+            <span style="color: darkorange;font-size: 40px">注意：{{ result.content }}！</span>
+
+        </p>
+
+</form>
+{% endblock %}
